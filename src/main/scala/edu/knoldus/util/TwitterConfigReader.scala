@@ -7,10 +7,10 @@ import com.typesafe.config.{Config, ConfigFactory}
  */
 object TwitterConfigReader {
 
-  val config: Config = ConfigFactory.load()
-  val getConsumerKey: String = config.getString("twitter.consumer.key")
-  val getSecretConsumerKey: String = config.getString("twitter.consumer.secret")
-  val getAccessKey: String = config.getString("twitter.access.key")
-  val getSecretAccessKey: String = config.getString("twitter.access.secret")
+  val Config: Config = ConfigFactory.load()
+  val GetConsumerKey: String = Config.getString("twitter.consumer.key")
+  val GetSecretConsumerKey: String = Config.getString("twitter.consumer.secret")
+  val GetAccessKey: String = Config.getString("twitter.access.key")
+  val GetSecretAccessKey: String = Config.getString("twitter.access.secret")
 
 }
